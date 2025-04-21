@@ -1,0 +1,9 @@
+Dataset
+
+For the Smart Robot We plan to use now is both primary and secondary to train whether the robot ability to help the human effective and efficiency.
+
+Primary Dataset:
+- Mainly collected from self-recorded data through the voice command (ex: sound, moving, action, stop) and image from mostly smartphone and navigation data generated mostly through simple robot movement test at individual place.
+
+Secondary Dataset:
+-Mainly Contains labeled voice samples used to train the robot for understanding human commands and includes some images used to teach the robot how to detect and classify common objects, and movement too.
