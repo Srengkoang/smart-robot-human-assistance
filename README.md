@@ -1,52 +1,72 @@
- ID  | Command            | Action Type       | Accuracy (%) | Date Recorded  |
-|-----|--------------------|-------------------|--------------|----------------|
-| 1   | Turn on light       | Voice Command     | 92%          | 2025-03-01     |
-| 2   | Move forward        | Movement          | 89%          | 2025-03-02     |
-| 3   | Pick object         | Arm Motion        | 85%          | 2025-03-03     |
-| 4   | Turn off light      | Voice Command     | 91%          | 2025-03-04     |
-| 5   | Rotate 180 degrees  | Rotation          | 88%          | 2025-03-05     |
-| 6   | Open door           | Arm Motion        | 87%          | 2025-03-06     |
-| 7   | Charge battery      | Battery Management| 95%          | 2025-03-07     |
-| 8   | Sweep floor         | Movement          | 90%          | 2025-03-08     |
-| 9   | Serve drink         | Arm Motion        | 93%          | 2025-03-09     |
-| 10  | Stop movement       | Movement          | 94%          | 2025-03-10     |
-| 11  | Pick up object      | Arm Motion        | 80%          | 2025-03-11     |
-| 12  | Turn left           | Movement          | 82%          | 2025-03-12     |
-| 13  | Turn right          | Movement          | 87%          | 2025-03-13     |
-| 14  | Move backward       | Movement          | 90%          | 2025-03-14     |
-| 15  | Serve snack         | Arm Motion        | 92%          | 2025-03-15     |
-| 16  | Charge dock         | Battery Management| 95%          | 2025-03-16     |
-| 17  | Pick up trash       | Arm Motion        | 85%          | 2025-03-17     |
-| 18  | Turn on air purifier| Voice Command     | 91%          | 2025-03-18     |
-| 19  | Rotate 90 degrees   | Rotation          | 88%          | 2025-03-19     |
-| 20  | Open window         | Arm Motion        | 86%          | 2025-03-20     |
-| 21  | Close window        | Arm Motion        | 89%          | 2025-03-21     |
-| 22  | Bring newspaper     | Arm Motion        | 87%          | 2025-03-22     |
-| 23  | Sweep dust          | Movement          | 90%          | 2025-03-23     |
-| 24  | Refill water        | Arm Motion        | 92%          | 2025-03-24     |
-| 25  | Rotate 180 degrees  | Rotation          | 91%          | 2025-03-25     |
-| 26  | Clean surface       | Arm Motion        | 88%          | 2025-03-26     |
-| 27  | Turn on fan         | Voice Command     | 90%          | 2025-03-27     |
-| 28  | Charge in dock      | Battery Management| 93%          | 2025-03-28     |
-| 29  | Lift object         | Arm Motion        | 91%          | 2025-03-29     |
-| 30  | Rotate head         | Rotation          | 89%          | 2025-03-30     |
-| 31  | Move left           | Movement          | 86%          | 2025-03-31     |
-| 32  | Move right          | Movement          | 83%          | 2025-04-01     |
-| 33  | Pick up object      | Arm Motion        | 92%          | 2025-04-02     |
-| 34  | Lift box            | Arm Motion        | 91%          | 2025-04-03     |
-| 35  | Turn on heater      | Voice Command     | 94%          | 2025-04-04     |
-| 36  | Rotate 270 degrees  | Rotation          | 85%          | 2025-04-05     |
-| 37  | Stop motion         | Movement          | 88%          | 2025-04-06     |
-| 38  | Serve food          | Arm Motion        | 90%          | 2025-04-07     |
-| 39  | Turn off heater     | Voice Command     | 92%          | 2025-04-08     |
-| 40  | Move in circle      | Movement          | 85%          | 2025-04-09     |
-| 41  | Pick up glass       | Arm Motion        | 93%          | 2025-04-10     |
-| 42  | Sweep dust          | Movement          | 91%          | 2025-04-11     |
-| 43  | Charge phone        | Battery Management| 92%          | 2025-04-12     |
-| 44  | Turn off light      | Voice Command     | 89%          | 2025-04-13     |
-| 45  | Serve coffee        | Arm Motion        | 94%          | 2025-04-14     |
-| 46  | Rotate 360 degrees  | Rotation          | 90%          | 2025-04-15     |
-| 47  | Open refrigerator   | Arm Motion        | 87%          | 2025-04-16     |
-| 48  | Turn on television  | Voice Command     | 93%          | 2025-04-17     |
-| 49  | Move forward        | Movement          | 90%          | 2025-04-18     |
-| 50  | Lift box            | Arm Motion        | 92%          | 2025-04-19     |
+| ID  | Dataset Type | Command            | Action Type       | Accuracy (%) | Date Recorded  |
+|-----|--------------|--------------------|-------------------|--------------|----------------|
+| 1   | Primary      | Turn on light       | Voice Command     | 92%          | 2025-03-01     |
+| 2   | Secondary    | Object Recognition  | Vision            | 85%          | 2025-03-01     |
+| 3   | Primary      | Move forward        | Movement          | 89%          | 2025-03-02     |
+| 4   | Secondary    | Path Planning       | Navigation        | 80%          | 2025-03-02     |
+| 5   | Primary      | Pick object         | Arm Motion        | 85%          | 2025-03-03     |
+| 6   | Secondary    | Voice Recognition   | Audio Processing  | 90%          | 2025-03-03     |
+| 7   | Primary      | Turn off light      | Voice Command     | 91%          | 2025-03-04     |
+| 8   | Secondary    | Environment Mapping | Vision            | 88%          | 2025-03-04     |
+| 9   | Primary      | Rotate 180 degrees  | Rotation          | 88%          | 2025-03-05     |
+| 10  | Secondary    | Battery Efficiency  | Energy Management | 92%          | 2025-03-05     |
+| 11  | Primary      | Open door           | Arm Motion        | 87%          | 2025-03-06     |
+| 12  | Secondary    | Object Handling     | Grasping          | 87%          | 2025-03-06     |
+| 13  | Primary      | Charge battery      | Battery Management| 95%          | 2025-03-07     |
+| 14  | Secondary    | Task Automation     | Programming       | 93%          | 2025-03-07     |
+| 15  | Primary      | Sweep floor         | Movement          | 90%          | 2025-03-08     |
+| 16  | Secondary    | Motion Detection    | Sensors           | 91%          | 2025-03-08     |
+| 17  | Primary      | Serve drink         | Arm Motion        | 93%          | 2025-03-09     |
+| 18  | Secondary    | Environmental Perception | Sensors      | 89%          | 2025-03-09     |
+| 19  | Primary      | Stop movement       | Movement          | 94%          | 2025-03-10     |
+| 20  | Secondary    | Control System      | Feedback System   | 94%          | 2025-03-10     |
+| 21  | Primary      | Pick up object      | Arm Motion        | 80%          | 2025-03-11     |
+| 22  | Secondary    | Decision Making     | AI Processing     | 85%          | 2025-03-11     |
+| 23  | Primary      | Turn left           | Movement          | 82%          | 2025-03-12     |
+| 24  | Secondary    | Navigation Assistance | GPS System       | 86%          | 2025-03-12     |
+| 25  | Primary      | Turn right          | Movement          | 87%          | 2025-03-13     |
+| 26  | Secondary    | Motion Control      | Servo Motors      | 80%          | 2025-03-13     |
+| 27  | Primary      | Move backward       | Movement          | 90%          | 2025-03-14     |
+| 28  | Secondary    | Temperature Regulation | Climate Control | 91%          | 2025-03-14     |
+| 29  | Primary      | Serve snack         | Arm Motion        | 92%          | 2025-03-15     |
+| 30  | Secondary    | Object Handling     | Grasping          | 87%          | 2025-03-15     |
+| 31  | Primary      | Charge dock         | Battery Management| 95%          | 2025-03-16     |
+| 32  | Secondary    | Path Planning       | Navigation        | 80%          | 2025-03-16     |
+| 33  | Primary      | Pick up trash       | Arm Motion        | 85%          | 2025-03-17     |
+| 34  | Secondary    | Decision Making     | AI Processing     | 85%          | 2025-03-17     |
+| 35  | Primary      | Turn on air purifier| Voice Command     | 91%          | 2025-03-18     |
+| 36  | Secondary    | Object Recognition  | Vision            | 85%          | 2025-03-18     |
+| 37  | Primary      | Rotate 90 degrees   | Rotation          | 88%          | 2025-03-19     |
+| 38  | Secondary    | Battery Efficiency  | Energy Management | 92%          | 2025-03-19     |
+| 39  | Primary      | Open window         | Arm Motion        | 86%          | 2025-03-20     |
+| 40  | Secondary    | Task Automation     | Programming       | 93%          | 2025-03-20     |
+| 41  | Primary      | Close window        | Arm Motion        | 89%          | 2025-03-21     |
+| 42  | Secondary    | Environmental Perception | Sensors      | 89%          | 2025-03-21     |
+| 43  | Primary      | Bring newspaper     | Arm Motion        | 87%          | 2025-03-22     |
+| 44  | Secondary    | Control System      | Feedback System   | 94%          | 2025-03-22     |
+| 45  | Primary      | Sweep dust          | Movement          | 90%          | 2025-03-23     |
+| 46  | Secondary    | Motion Detection    | Sensors           | 91%          | 2025-03-23     |
+| 47  | Primary      | Refill water        | Arm Motion        | 92%          | 2025-03-24     |
+| 48  | Secondary    | Path Planning       | Navigation        | 80%          | 2025-03-24     |
+| 49  | Primary      | Rotate 180 degrees  | Rotation          | 91%          | 2025-03-25     |
+| 50  | Secondary    | Object Handling     | Grasping          | 87%          | 2025-03-25     |
+| 51  | Primary      | Clean surface       | Arm Motion        | 88%          | 2025-03-26     |
+| 52  | Secondary    | Decision Making     | AI Processing     | 85%          | 2025-03-26     |
+| 53  | Primary      | Turn on fan         | Voice Command     | 90%          | 2025-03-27     |
+| 54  | Secondary    | Battery Efficiency  | Energy Management | 92%          | 2025-03-27     |
+| 55  | Primary      | Charge in dock      | Battery Management| 93%          | 2025-03-28     |
+| 56  | Secondary    | Environmental Perception | Sensors      | 89%          | 2025-03-28     |
+| 57  | Primary      | Lift object         | Arm Motion        | 91%          | 2025-03-29     |
+| 58  | Secondary    | Path Planning       | Navigation        | 80%          | 2025-03-29     |
+| 59  | Primary      | Rotate head         | Rotation          | 89%          | 2025-03-30     |
+| 60  | Secondary    | Temperature Regulation | Climate Control | 91%          | 2025-03-30     |
+| 61  | Primary      | Move left           | Movement          | 86%          | 2025-03-31     |
+| 62  | Secondary    | Task Automation     | Programming       | 93%          | 2025-03-31     |
+| 63  | Primary      | Move right          | Movement          | 83%          | 2025-04-01     |
+| 64  | Secondary    | Object Recognition  | Vision            | 85%          | 2025-04-01     |
+| 65  | Primary      | Pick up object      | Arm Motion        | 92%          | 2025-04-02     |
+| 66  | Secondary    | Motion Detection    | Sensors           | 91%          | 2025-04-02     |
+| 67  | Primary      | Open door           | Arm Motion        | 89%          | 2025-04-03     |
+| 68  | Secondary    | Environmental Mapping | Vision          | 88%          | 2025-04-03     |
+| 69  | Primary      | Serve food          | Arm Motion        | 94%          | 2025-04-04     |
+| 70  | Secondary    | Path Planning       | Navigation        | 92%          | 2025-04-04     |
