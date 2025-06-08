@@ -100,4 +100,4 @@
 | 98  | Secondary | Path recalculation  | Navigation         | 87%          | 2025-04-18 |
 | 99  | Primary   | Turn off device     | Voice Command      | 89%          | 2025-04-19 |
 | 100 | Secondary | System update       | Programming        | 93%          | 2025-04-19 |
-
+| 101 | primary | Serving Food      | Movement      | 95%          | 2025-04-12 |
