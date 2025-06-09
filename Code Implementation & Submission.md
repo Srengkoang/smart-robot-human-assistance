@@ -1,0 +1,1 @@
+The key settings include the robot’s speed and velocity, sensor sensitivity, path planning speed, gripping force, and battery usage or power consumption. These are essential to improve the robot’s performance, making it more effective, safe, and efficient in real-life tasks.
